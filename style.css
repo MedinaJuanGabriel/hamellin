@@ -1,4 +1,3 @@
-
 .navbar {
  padding: 2rem;
 background-color: #E1EE50;
@@ -72,7 +71,6 @@ h1{
 
 /* sobre mi */
 
-
 .sobre-mi{
 height: 500px;
 padding: 10px;
@@ -82,22 +80,21 @@ padding-bottom: 300px;
 
 .sobre-mi .contenedor{
    max-width: 600px; 
-   text-align: center; 
+   text-align: center;
+   
 }
 
 .bocetos-backstage {
 padding: 40px;
 }
 
-
-
 .bocetos-backstage .row .col-md-4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
 .card-1 {
