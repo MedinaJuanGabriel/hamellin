@@ -82,9 +82,7 @@ padding-bottom: 300px;
 
 .sobre-mi .contenedor{
    max-width: 600px; 
-   text-align: center;
-   margin-top: 70px;
-   margin-bottom: 70px;
+   text-align: center; 
 }
 
 .bocetos-backstage {
