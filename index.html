@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+  <html lang="es">
+ <!--Alumno:Juan Gabriel Medina   Legajo:93530/3    Comision: 3     docente:David Bedoian  Materia: Tecnologia Multimedia 1
+Tp final parte 2: sitio web que muestra la Aventura gráfica desarrollada en p5-js como trabajo final de la comisión. -->
+ <head>
+   <meta charset="utf-8">
+   <meta name="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Hamellin</title>
+   <link rel="icon" href="imagenes/icono2.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  </head>
+ <body>
+ <!-- navbar -->
+  <nav id="arriba"   class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/icono.png" alt="Logo icono">
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proceso-creativo">Proceso creativo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#juego-hamellin">Juego</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+ <!-- Seccion hero -->
+<section class="hero allign-items-stretch">
+  <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+    <img class="hero-imagen-desarrollador" src="imagenes/logo.svg" alt="Logo">
+    <h1>Hola,soy Juan Gabriel Medina</h1>
+    <h2>Desarrollador de Hamellin</h2>
+  </div>
+  <div class="hero-inferior">
+  <img class="hero-inferior-imagen img-fluid"  src="imagenes/hero-inferior.svg" alt="Logo del juego">
+  </div>
+</section>
+<!-- Sobre mi -->
+<section id="sobre-mi"  class="sobre-mi seccion-oscura">
+  <div class="contenedor">
+    <h2 class="seccion-titulo">Conoce al equipo de desarrollo <a href="#arriba"><img src="imagenes/volver atras.png" alt="vuelve al navegador"></a></h2>
+    <p class="seccion-texto">Si,soy yo,solo yo,todas las ilustraciones del juego las modele a traves de figma de figuras simpleas a figuras complejas,creando escenarios y personajes,tambien marca,logo y demas. la programacion de la aventura grafica primero hecha en processing,para luego ser pasada a p5js y posteriormente ser agregado un minijuego al mismo. Todo paso por varias versiones preliminares y trato de ser pensado de la manera mas creativa posible,es un juego parodico y tambien algo terrorifico en ciertos aspectos que busca relucir a los villanos de la historia y mostrar el rol antagonico del flautista,pero tambien la avaricia de los pueblerinos,espero les guste el juego.</p>
+  </div>
+</section>
+<!-- Proceso creativo -->
+<section id="proceso-creativo" class="bocetos-backstage seccion-clara">
+<div class="container text-center">
+  <h1>Proceso creativo <a href="#arriba"><img src="imagenes/volver atras.png" alt="vuelve al navegador"></a></h1>
+  <h1>-------------------</h1>
+  <!-- bocetos -->
+  <div class="row">
+    
+    <h2 class="seccion-titulo">Bocetos/Concept art</h2>
+    <p class="seccion-texto">Son pocos los modelos antiguos que no fueron borrados,esto es lo poco que pude recuperar,los personajes pasaron realmente por bastantes cambios de su version inicial a la final,como también esta adaptación que hice del flautista de hamellin,creando a un nuevo antagonista,la reina ratona,dandole una consciencia y cualidades sobrenaturales a los ratones/ratas, también creando a ben como protagonista y dandole el rol de jefe del gremio campesino,ademas de todo un transfondo,fueron decisiones creativas que creo enriquecieron mas la aventura grafica.</p>
+    <h2>-------------------</h2>
+    <!--Flautista v1 -->
+   <div class="col-12 col-md-4">
+     <h3 class="seccion-titulo">Flautista concepto</h3>
+     <div class="card-1" style="width: 18rem;">
+      <img class=img-card src="imagenes/flv1.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Un bocetado inicial del principal antagonista que tambien es el personaje jugable del minijuego.</p>
+      </div>
+    </div>
+   </div>
+    <!-- Protagonista v1 y v2 -->
+    <div class="col-12 col-md-4">
+      <h3 class="seccion-titulo">Protagonista concepto</h3>
+        <div class="card-1" style="width: 18rem;">
+         <img  class=img-card src="imagenes/prv1.svg" class="card-img-top" alt="...">
+         <div class="card-body">
+           <p class="card-text">Un boceto muy basico del protagonista,hubo otras versiones hasta llegar a la final,siempre se busco que no tenga demasiados rasgos para que el jugador pueda sentirse mas inmerso.</p>
+         </div>
+       </div>
+   </div>
+     <!-- reina ratona v1 -->
+     <div class="col-12 col-md-4">
+      <h3 class="seccion-titulo" >Reina ratona concepto</h3>
+      <div class="card-1" style="width: 18rem;">
+        <img class=img-card src="imagenes/rrv1.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Una de nuestras antagonistas que mas cambios tuvo de cara de inicio del desarrollo a su version final.</p>
+        </div>
+      </div>
+   </div>
+     
+  </div>
+</div>
+</section>
+<!-- backstage -->
+<section class="bocetos-backstage seccion-clara">
+  <div class="container text-center">
+    <div class="row">
+      <h2 class="seccion-titulo">Detras de escena/Piezas</h2>
+      <p class="seccion-texto">Aqui muestro un poco de las cientas de piezas que conforman a cada modelo como muestra del desarrollo de las mismas,algunos requirieron bocetos previos y otros fueron creados y luego se crearon variantes de los mismos.</p>
+      <h2>-------------------</h2>
+      <!--Flautista v1 -->
+     <div class="col-12 col-md-4"> 
+       <div class="card-2" style="width: 18rem;">
+        <img class=img-card-2 src="imagenes/piezas3.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="seccion-titulo">Partes del Paisaje</h3>
+          <p class="card-text">aqui podemos ver cosas como la cueva del flautista,elementos del paisaje como pasto,caminos de piedra,y parte de la flora de Hamellin.Tambien muy reutilizados para escenarios.</p>
+        </div>
+      </div>
+     </div>
+      <!-- Protagonista v1 y v2 -->
+      <div class="col-12 col-md-4">
+          <div class="card-2" style="width: 18rem;">
+           <img  class=img-card-2 src="imagenes/piezas2.svg" class="card-img-top" alt="...">
+           <div class="card-body">
+            <h3 class="seccion-titulo">Partes de aldea</h3>
+             <p class="card-text">aqui podemos ver cosas como el granero de ben,el muro de la ciudad,casas,y estructuras como la iglesia,alcaldia y decorativos.Tambien muy reutilizados para escenarios.</p>
+           </div>
+         </div>
+        </div>
+
+         <div class="col-12 col-md-4">
+    <div class="card-2" style="width: 18rem;">
+      <img class=img-card-2 src="imagenes/piezas1.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3 class="seccion-titulo">Partes de cuerpos</h3>
+        <p class="card-text">Una de las partes mas reutilizables e utiles son estas,ya que pueden ser utilizadas para rapidamente cambiar las expresiones y movimientos de los personajes.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- personajes -->
+  <section class="bocetos-backstage seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <h2 class="seccion-titulo">Personajes</h2>
+        <p class="seccion-texto">Aqui veran a los personajes acompañados de una breve descripcion y sus versiones mas importantes.</p>
+        <h2>-------------------</h2>
+  
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+          </div>
+  
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img  src="imagenes/per1.svg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per2.svg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/per3.svg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per4.svg" class="d-block w-100" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per5.svg" class="d-block w-100" alt="Slide 5">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per6.svg" class="d-block w-100" alt="Slide 6">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per7.svg" class="d-block w-100" alt="Slide 7">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per8.svg" class="d-block w-100" alt="Slide 8">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/per9.svg" class="d-block w-100" alt="Slide 9">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/per10.svg" class="d-block w-100" alt="Slide 10">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per11.svg" class="d-block w-100" alt="Slide 11">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per12.svg" class="d-block w-100" alt="Slide 12">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/per13.svg" class="d-block w-100" alt="Slide 13">
+            </div>
+          </div>
+  
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- personajes extra/eliminados -->
+  <section class="seccion-clara">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <h2 class="seccion-titulo">Personajes extra/eliminados</h2>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+          <section class="bocetos-backstage seccion-clara">
+            <div class="container text-center">
+              <div class="row">
+                
+          
+                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+          
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img  src="imagenes/p1.svg" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                      <img  src="imagenes/p2.svg" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="imagenes/p3.svg" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                      <img  src="imagenes/p4.svg" class="d-block w-100" alt="Slide 4">
+                    </div>
+                    <div class="carousel-item">
+                      <img  src="imagenes/p5.svg" class="d-block w-100" alt="Slide 5">
+                    </div>
+                    <div class="carousel-item">
+                      <img  src="imagenes/p6.svg" class="d-block w-100" alt="Slide 6">
+                    </div>
+                 </div>
+          
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+<!-- mapa -->
+  <section class="mapa-img seccion-clara d-flex flex-column">
+    <h2>-------------------</h2>
+    <h2 class="seccion-titulo">Mapa</h2>
+    <!-- mapa -->
+    <div class="container text-center mapa-contenedor">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mx-auto">
+          <div class="proyecto">
+            <img class="mapa-imgn" src="imagenes/mapa.svg" alt="Proyecto 1">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Escenarios -->
+  <section class="bocetos-backstage seccion-clara">
+    <div class="container text-center">
+      <div class="row">
+        <h2 class="seccion-titulo">Escenarios</h2>
+        <p class="seccion-texto">Aqui veran a los principales escenarios donde transcurre la historia y algunos datos curiosos.</p>
+        <h2>-------------------</h2>
+  
+        <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="8" aria-label="Slide 9"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="9" aria-label="Slide 10"></button>
+          </div>
+  
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img  src="imagenes/pe1.svg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/pe2.svg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/pe3.svg" class="d-block w-100" alt="Slide 3">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/pe4.svg" class="d-block w-100" alt="Slide 4">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/pe5.svg" class="d-block w-100" alt="Slide 5">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/pe6.svg" class="d-block w-100" alt="Slide 6">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/pe7.svg" class="d-block w-100" alt="Slide 7">
+            </div>
+            <div class="carousel-item">
+              <img  src="imagenes/pe8.svg" class="d-block w-100" alt="Slide 8">
+            </div>
+            <div class="carousel-item">
+              <img src="imagenes/pe9.svg" class="d-block w-100" alt="Slide 9">
+            </div>
+          </div>
+  
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Juego -->
+  <section id="juego-hamellin" class="seccion-oscura">
+    <div class="container text-center">
+      <div class="row">
+        <h2 class="seccion-titulo">Juego <a href="#arriba"><img src="imagenes/volver atras.png" alt="vuelve al navegador"></a></h2>
+        <h3 class="seccion-titulo">Hammelin y la tormenta de roedores</h3>
+        <h2>-------------------</h2>
+        <div class="card-3 text-center">
+          <img src="imagenes/portada.svg" alt="portada">
+          <div class="card-body">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Entrar al Juego
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">El Flautista de Hamellin</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <iframe src="tpfinal/index.html" frameborder="0" width="610" height="610" class="mx-auto" style="display: block;"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+ <!-- Contacto y footer -->
+    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center"> 
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <div class="row">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hola! <a href="#arriba"><img src="imagenes/volver atras.png" alt="vuelve al navegador"></a>
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contáctame para ayudar con el diseño del juego o si tienes nuevas ideas.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:gm66330@gmail.com">
+                <button type="button">  
+                  Contacto
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+      <p class="footer-texto text-center">Espero hayan disfrutado el juego.<br>Agradecemos su visita.</p>
+      <div class="derechos-de-autor">Creado por Juan Gabriel Medina (2023) </div>
+    </footer>
+
+ </body>
+</html>

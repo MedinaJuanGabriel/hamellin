@@ -1,0 +1,309 @@
+
+.navbar {
+ padding: 2rem;
+background-color: #E1EE50;
+}
+
+.navbar-collapse{
+align-items: center;
+justify-content: space-between;
+
+}
+/* Estilos generales */
+section {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+font-size: 2.5rem;
+
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #2a2b20;
+}
+
+.seccion-clara{
+   background-color:  rgb(252, 235, 216);
+    color: #2a2b20;
+}
+
+.seccion-titulo{
+font-size: 2rem;
+padding: 15px 0;
+font-family: 'MedievalSharp', cursive;
+}
+
+
+.seccion-texto{
+font-size: 1.2rem;
+}
+
+/* Seccion hero */
+
+.hero{
+    background-color: rgb(252, 235, 216);
+    min-height: 450px;
+    text-align: center;
+}
+.hero-principal{
+ padding: 3rem;
+}
+
+.hero-imagen-desarrollador{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+margin: 20px;
+}
+h1{
+    font-family: 'MedievalSharp', cursive;
+
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #4b3d3d;
+}
+
+/* sobre mi */
+
+.sobre-mi{
+height: 500px;
+padding: 10px;
+}
+
+.sobre-mi .contenedor{
+   max-width: 600px; 
+   text-align: center;
+}
+
+.bocetos-backstage {
+padding: 40px;
+}
+
+
+
+.bocetos-backstage .row .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.card-1 {
+    width: 18rem;
+    margin-top: 15px;
+  }
+
+.img-card{
+    width: 270px;
+    height: 300px;
+    border-radius: 10%;
+    border-color: burlywood;
+
+  }
+
+.img-card-2{
+    width: 300px;
+    height: 200px;
+    border-radius: 5%;
+    border-color: burlywood;
+
+  }
+
+  #carouselExampleIndicators {
+    max-width: 800px; 
+    max-height: 800px; 
+    margin: auto; /* Centra el carrusel en la página */
+  }
+  #carouselExampleIndicators2 {
+    max-width: 800px; 
+    max-height: 800px; 
+    margin: auto; /* Centra el carrusel en la página */
+  }
+  #carouselExampleIndicators3 {
+    max-width: 800px; 
+    max-height: 800px; 
+    margin: auto; /* Centra el carrusel en la página */
+  }
+  
+  .accordion-button {
+    background-color: #db9834; /* Fondo del botón */
+    color: #000000; /* Color del texto del botón */
+  }
+  
+  /* Estilo para el encabezado del acordeón cuando está desplegado */
+  .accordion-button[aria-expanded="true"] {
+    background-color: #dbb947; /* Fondo del botón cuando está desplegado */
+  }
+  
+  /* Estilo para el cuerpo del acordeón */
+  .accordion-body {
+    background-color:  rgb(252, 235, 216);
+ border-color: #db9834;
+  }
+
+  
+
+  .accordion-item:not(.accordion-item-expanded) .accordion-button {
+    background-color: rgb(252, 235, 216); /* Fondo del botón */
+    color: #000000; /* Color del texto del botón */
+  }
+  
+  /* Estilo para el cuerpo del acordeón antes de desplegarse */
+  .accordion-item:not(.accordion-item-expanded) .accordion-body {
+    background-color: rgb(252, 235, 216); /* Fondo del cuerpo del acordeón */
+    color: #000000; /* Color del texto del cuerpo del acordeón */
+  }
+
+  /* Estilo para las líneas superior e inferior del acordeón */
+.accordion-item {
+  border: 1px solid burlywood;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Ajusta la sombra para resaltar el acordeón */
+}
+
+
+  .mapa-img {
+    max-width: 100%; /* Hace que la imagen no sea más ancha que su contenedor */
+   
+  }
+  
+  .mapa-imgn {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que su contenedor */
+    display: block; /* Añade display: block para ajustar el centro correctamente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-height: 100%; /* Asegura que la imagen no sea más alta que su contenedor */
+  }
+  
+  .mapa-contenedor {
+    padding-top: 2px;
+    margin-bottom: 20px;
+  }
+
+  .card-3{
+    background-color:  #2a2b20; /* Cambia el color de fondo de la tarjeta a un tono más oscuro */
+ 
+    .btn-primary {
+        background-color: #E1EE50;  /* Cambia el color de fondo del botón a amarillo */
+        border-color: #ffcc00; /* Cambia el color del borde del botón a amarillo */
+        color: #000000; /* Cambia el color del texto del botón a oscuro */
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+    .btn-secondary {
+        background-color: #E1EE50;  /* Cambia el color de fondo del botón a amarillo */
+        border-color: #ffcc00; /* Cambia el color del borde del botón a amarillo */
+        color: #000000; /* Cambia el color del texto del botón a oscuro */
+
+    }
+
+  }
+.modal-header {
+      background-color: #8D8F6D ; 
+      color: #fff ; 
+    }
+   
+.modal-body{
+ background-color:#A9AD81;
+}
+
+.modal-content .modal-footer {
+    background-color: #8D8F6D;
+}
+
+@media screen and (max-width:767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+@media screen and (max-width:700px) {
+    .hero-inferior-imagen {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    .modal-xl {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  .contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .contacto .rectangulo {
+    margin-top: -5rem;
+    background-color:#A9AD81;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+  
+  footer {
+    min-height: 500px;
+    background-color: #E1EE50; 
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .derechos-de-autor {
+    font-size: 18px;
+    color: #2c2a2a;
+    padding: 20px;
+  }
+  
